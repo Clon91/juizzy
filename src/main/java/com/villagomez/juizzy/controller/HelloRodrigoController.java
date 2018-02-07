@@ -29,6 +29,7 @@ public class HelloRodrigoController {
 		people.add(new Person("Diana", 2));
 		people.add(new Person("Rodrigo", 7));
 		people.add(new Person("Ivana", 3));
+		people.add(new Person("Emanuel", 1));
 		return people;
 	}
 
