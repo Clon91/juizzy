@@ -5,6 +5,23 @@
 <title>Hello</title>
 </head>
 <body>
-	<h1>Hello Rodrigo</h1>
+	<h1>Hello <span th:text="${name}" /></h1>
+	<h1>From <span th:text="${person.name}" /> <span th:text="${person.age}" /></h1>
+	<h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody th:each="person : ${people}">
+			<tr>
+				<th th:text="${person.name}"/>
+				<th th:text="${person.age}" />
+			</tr>
+		</tbody>
+	</table>
+	</h1>
 </body>
 </html>
