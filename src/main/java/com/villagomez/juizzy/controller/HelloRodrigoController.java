@@ -26,11 +26,11 @@ public class HelloRodrigoController {
 	
 	private List<Person> getPeople(){
 		List<Person> people = new ArrayList<>();
-		people.add(new Person("Diana", 2));
-		people.add(new Person("Rodrigo", 7));
-		people.add(new Person("Ivana", 3));
-		people.add(new Person("Emanuel", 1));
-		people.add(new Person("Diego", 26));
+		people.add(new Person("Irving", 2));
+		people.add(new Person("Victor", 7));
+		people.add(new Person("Jose", 3));
+		people.add(new Person("Toño", 1));
+		people.add(new Person("Rodrigo", 26));
 		return people;
 	}
 
