@@ -8,7 +8,7 @@ import org.slf4j.*;
 @Component
 public class Util {
 	
-	public void logAdd(Class classToLog, String methodName, String message, Constants.TYPES type) throws NoSuchMethodException, SecurityException, IOException {
+	public static void logAdd(Class classToLog, String methodName, String message, Constants.TYPES type) throws NoSuchMethodException, SecurityException, IOException {
 		Logger LOGGER = LoggerFactory.getLogger(classToLog);
 		String msg = "Method name: "+classToLog.getDeclaredMethod(methodName).getName()+" Message: "+message;
 		switch (type) {
